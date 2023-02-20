@@ -1,0 +1,111 @@
+#calculator{
+    width: 25em;
+    height: 30;
+    padding: 1em;
+    background: #2E3435;
+    border-radius: 1.5625em;
+    box-shadow: 0 0.3125em #1f2324;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#calculator-screen{
+    width: 100%;
+    padding: 0.6em;
+    background: #646464;
+    border-radius: 0.9375em;
+
+    flex: 2;
+    display: block;
+    text-align: right;
+}
+
+#last-operation{
+    color: #00E0FF;
+    font-size: 1.5em;
+}
+
+#current-operation{
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+
+#calculator-buttons{
+    width: 100%;
+    flex: 8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+#calculator-buttons button{
+    font-size: 1.3em;
+    border: none;
+    border-radius: 0.625em;
+    background-color: #646464;
+    color: #FFFFFF;
+    box-shadow: 0 0.3125em #1f2324;
+    text-align: center;
+}
+
+#calculator-buttons button:hover {background-color: #868686}
+
+#calculator-buttons button:active {
+    background-color: #868686;
+    box-shadow: 0 0.1875em #1f2324;
+    transform: translateY(0.125em);
+}
+
+#calculator-buttons .number{
+    background-color: #8913D1;
+}
+
+#calculator-buttons .number:hover{background-color: #9916ea}
+
+#calculator-buttons .number:active{background-color: #9916ea}
+
+#calculator-buttons #equal-btn{
+    grid-column: 3/5;
+    background-color: #00E0FF;
+    color: #2E3435;
+}
+
+#calculator-buttons #equal-btn:hover{background-color: #44e9ff}
+
+#calculator-buttons #equal-btn:active{background-color: #44e9ff}
+
+#calculator-buttons button img{
+    width: 1.3em;
+    height: 2em;
+}
+
+#calculator-buttons button img[alt="subtraction-icon"]{
+    width: 0.9em;
+    height: 2em;
+}
+
+@media (max-width: 470px){
+
+    #calculator{
+        width: 20em;
+    }
+    
+    #calculator-screen{
+        padding: 0.6em;
+    }
+
+    #calculator-buttons{
+        grid-column-gap: 0.5em;
+    }
+}
+
+@media (min-height: 570px){
+
+    #calculator{
+        height: 90%;
+    }
+}
