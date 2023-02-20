@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/tasks.css" />
+    <title>Tasks</title>
+  </head>
+  <body>
+    <div id="background">
+      <h1 id="name">Utilities</h1>
+      <nav>
+        <button onclick="window.location.href ='calculator.html'">
+          Calculator
+        </button>
+        <button onclick="window.location.href ='stopwatch.html'">
+          Stopwatch
+        </button>
+        <button disabled="disabled">Tasks</button>
+        <button onclick="window.location.href ='pomodoro.html'">
+          Pomodoro
+        </button>
+      </nav>
+      <main>
+        <div id="tasks">
+          <form id="add-task" action="">
+            <label for="description">Description:</label>
+            <input id="description" type="text" />
+            <button id="save" type="button">Save</button>
+          </form>
+          <div id="task-list" action=""></div>
+        </div>
+      </main>
+      <footer>
+        <img src="../Assets/perfil.jpg" alt="Foto Gabriele Martins" />
+        <p>&copy; Gabriele Martins</p>
+      </footer>
+    </div>
+    <script src="../js/tasks.js"></script>
+  </body>
+</html>

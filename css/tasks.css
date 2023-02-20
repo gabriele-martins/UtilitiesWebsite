@@ -1,0 +1,108 @@
+#background {
+  height: 165vh;
+}
+
+#tasks {
+  width: 50em;
+  height: 85%;
+  padding: 0.8em;
+  background: #2e3435;
+  border-radius: 1.5625em;
+  box-shadow: 0 0.3125em #1f2324;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+#tasks #add-task {
+  width: 95%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+#tasks #add-task label {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+#tasks #add-task input {
+  width: 65%;
+  font-size: 16px;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.15em;
+}
+
+#tasks #add-task #save {
+  width: 5em;
+  height: 1.7em;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #00e0ff;
+  color: #2e3435;
+  box-shadow: 0 0.3125em #1f2324;
+  flex: 1;
+  text-align: center;
+}
+
+#tasks #add-task #save:active {
+  background-color: #44e9ff;
+  box-shadow: 0 0.1875em #1f2324;
+  transform: translateY(0.125em);
+}
+
+#tasks #add-task #save:hover {
+  background-color: #44e9ff;
+}
+
+#tasks #task-list {
+  width: 100%;
+  overflow-y: scroll;
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+#tasks #task-list .task {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#tasks #task-list .task input.status {
+  width: 2.6em;
+  height: 2.6em;
+  accent-color: #00e0ff;
+}
+
+#tasks #task-list .task p {
+  width: 90%;
+  color: #ffffff;
+  background-color: #8913d1;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.15em;
+}
+
+#tasks #task-list .task #delete {
+  width: 2.8em;
+  height: 2.8em;
+  border: none;
+  border-radius: 0.15em;
+  background-color: #ff6153;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tasks #task-list .task #delete img {
+  width: 2.4em;
+}
