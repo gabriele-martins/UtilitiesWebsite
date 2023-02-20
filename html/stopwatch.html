@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/stopwatch.css" />
+    <script src="../js/stopwatch.js"></script>
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div id="background">
+      <h1 id="name">Utilities</h1>
+      <nav>
+        <button onclick="window.location.href ='calculator.html'">
+          Calculator
+        </button>
+        <button disabled="disabled">Stopwatch</button>
+        <button onclick="window.location.href ='tasks.html'">Tasks</button>
+        <button onclick="window.location.href ='pomodoro.html'">
+          Pomodoro
+        </button>
+      </nav>
+      <main>
+        <div id="stopwatch">
+          <div id="stopwatch-screen">
+            <p id="hour">00:</p>
+            <p id="minute">00:</p>
+            <p id="second">00</p>
+          </div>
+          <div id="stopwatch-buttons">
+            <button id="start" onclick="start()">Start</button>
+            <button id="pause" onclick="pause()">Pause</button>
+            <button id="reset" onclick="reset()">Reset</button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <img src="../Assets/perfil.jpg" alt="Foto Gabriele Martins" />
+        <p>&copy; Gabriele Martins</p>
+      </footer>
+    </div>
+  </body>
+</html>
