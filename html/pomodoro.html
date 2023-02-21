@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/stopwatch.css" />
-    <title>Stopwatch</title>
-    <link rel="icon" href="../assets/stopwatch-favicon.svg" />
+    <link rel="stylesheet" href="../css/pomodoro.css" />
+    <title>Pomodoro</title>
+    <link rel="icon" id="favicon" href="../assets/red-pomodoro.svg" />
   </head>
   <body>
     <div id="background">
@@ -16,20 +16,25 @@
         <button onclick="window.location.href ='calculator.html'">
           Calculator
         </button>
-        <button disabled="disabled">Stopwatch</button>
-        <button onclick="window.location.href ='tasks.html'">Tasks</button>
-        <button onclick="window.location.href ='pomodoro.html'">
-          Pomodoro
+        <button onclick="window.location.href ='stopwatch.html'">
+          Stopwatch
         </button>
+        <button onclick="window.location.href ='tasks.html'">Tasks</button>
+        <button disabled="disabled">Pomodoro</button>
       </nav>
       <main>
-        <div id="stopwatch">
-          <div id="stopwatch-screen">
-            <p id="hour">00:</p>
-            <p id="minute">00:</p>
+        <div id="pomodoro">
+          <h1 id="cicle">Cicle #1</h1>
+          <div id="pomodoro-cicles">
+            <button id="pomodoro-btn" disabled="enabled">Pomodoro</button>
+            <button id="short-break">Short Break</button>
+            <button id="long-break">Long Break</button>
+          </div>
+          <div id="pomodoro-screen">
+            <p id="minute">25:</p>
             <p id="second">00</p>
           </div>
-          <div id="stopwatch-buttons">
+          <div id="pomodoro-buttons">
             <button id="start">Start</button>
             <button id="pause">Pause</button>
             <button id="reset">Reset</button>
@@ -41,6 +46,6 @@
         <p>&copy; Gabriele Martins</p>
       </footer>
     </div>
-    <script src="../js/stopwatch.js"></script>
+    <script src="../js/pomodoro.js"></script>
   </body>
 </html>

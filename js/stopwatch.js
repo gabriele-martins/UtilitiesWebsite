@@ -1,3 +1,7 @@
+const pageTitle = document.querySelector("title");
+const startButton = document.querySelector("#start");
+const pauseButton = document.querySelector("#pause");
+const resetButton = document.querySelector("#reset");
 let hour = 0;
 let minute = 0;
 let second = 0;
@@ -36,8 +40,23 @@ function timer() {
   document.getElementById("hour").innerText = returnData(hour) + ":";
   document.getElementById("minute").innerText = returnData(minute) + ":";
   document.getElementById("second").innerText = returnData(second);
+
+  pageTitle.innerText =
+    returnData(hour) + ":" + returnData(minute) + ":" + returnData(second);
 }
 
 function returnData(input) {
   return input > 9 ? input : `0${input}`;
 }
+
+startButton.addEventListener("click", () => {
+  start();
+});
+
+pauseButton.addEventListener("click", () => {
+  pause();
+});
+
+resetButton.addEventListener("click", () => {
+  reset();
+});
